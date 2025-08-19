@@ -29,7 +29,7 @@
                 <th>Doctor ID</th>
                 <th>Date & Time</th>
             </tr>
-            <!-- Appointment rows will go here -->
+            
         </table>
     </section>
 
@@ -62,7 +62,7 @@
             .then(response => response.json())
             .then(appointments => {
                 const table = document.getElementById('appointmentsTable');
-                // Clear existing rows except the header
+                
                 table.innerHTML = `
                     <tr>
                         <th>ID</th>
