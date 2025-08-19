@@ -62,7 +62,7 @@ function loadDoctors() {
         .then(response => response.json())
         .then(doctors => {
             const table = document.getElementById('doctorsTable');
-            // Clear existing rows except the header
+            
             table.innerHTML = `
                 <tr>
                     <th>ID</th>
